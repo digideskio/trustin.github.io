@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sphinx-gradle-plugin &mdash; sphinx-gradle-plugin 1.0.2.Final documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="stylesheet" href="_static/overrides.css" type="text/css" />
+  
+    <link rel="top" title="sphinx-gradle-plugin 1.0.2.Final documentation" href="#"/>
+        <link rel="next" title="Using the Plugin" href="basic-usage.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> sphinx-gradle-plugin
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="basic-usage.html">Using the Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html#using-plantuml">Using PlantUML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html#sample-documentation-config">Sample Documentation Config</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">sphinx-gradle-plugin</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>sphinx-gradle-plugin</li>
+    <li class="wy-breadcrumbs-aside">
+      
+          
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx-gradle-plugin">
+<h1>sphinx-gradle-plugin<a class="headerlink" href="#sphinx-gradle-plugin" title="Permalink to this headline">¶</a></h1>
+<p>The <em>sphinx-gradle-plugin</em> is a <a class="reference external" href="https://gradle.org/">Gradle</a> plugin that uses <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> to generate the project web site.
+Sphinx itself was originally created by the Python community for the new Python documentation. It uses a
+plain text format called <a class="reference external" href="http://docutils.sf.net/rst.html">reStructured Text</a> which it then compiles into a variety of documentation formats
+such as HTML, LaTeX (for PDF), epub. reStructured Text is similar to <a class="reference external" href="http://daringfireball.net/projects/markdown/">Markdown</a> but - at least via Sphinx -
+has better support for multi-page documentation.</p>
+<p>The <em>sphinx-gradle-plugin</em> is licensed under Apache License, Version 2.0. The plugin was created for Java-based
+applications. The idea was to introduce the benefits of reStructured Text format and Sphinx documentation
+generator for generating documentation for custom applications.</p>
+<p>This plugin contains the python packages and its dependencies that are needed to generate the documentation
+using <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a>. The plugin only supports the default themes that come along with <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> python package.
+It also incorporates other open source plugins that are helpful while explaining complex concepts within
+documentation. These plugins are:</p>
+<div class="section" id="extensions">
+<h2>Extensions<a class="headerlink" href="#extensions" title="Permalink to this headline">¶</a></h2>
+<p>Besides the extensions distributed with <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a>, this plugin includes the following extensions:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://pypi.python.org/pypi/sphinxcontrib-plantuml">sphinxcontrib-plantuml</a> - enables embedding <a class="reference external" href="http://plantuml.sourceforge.net/">PlantUML</a> diagrams</li>
+<li><a class="reference external" href="http://sphinxcontrib-inlinesyntaxhighlight.readthedocs.org/en/latest/">sphinxcontrib-inlinesyntaxhighlight</a> - enables syntax-highlighting inline literals</li>
+<li><a class="reference external" href="https://recommonmark.readthedocs.org/en/latest/">recommonmark</a> - adds Markdown support</li>
+<li><a class="reference external" href="http://bronto.github.io/javasphinx/">javasphinx</a> - adds the Java domain</li>
+</ul>
+</div>
+<div class="section" id="credits-and-changes">
+<h2>Credits and changes<a class="headerlink" href="#credits-and-changes" title="Permalink to this headline">¶</a></h2>
+<p>This plugin reuses the <code class="docutils literal"><span class="pre">SphinxRunner</span></code> implementation of <code class="docutils literal"><span class="pre">sphinx-maven-plugin</span></code> originally written by
+<a class="reference external" href="https://github.com/tomdz/sphinx-maven">Thomas Dudziak</a>. <a class="reference external" href="https://github.com/balasridhar/sphinx-maven">Bala Sridhar</a> since then upgraded Sphinx to 1.3.1 and added PlantUML and JavaSphinx
+support in his fork. I&#8217;d like to appreciate their effort that did all the heavy lifting.</p>
+<div class="section" id="final-28-sep-2016">
+<h3>1.0.2.Final (28-Sep-2016)<a class="headerlink" href="#final-28-sep-2016" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fixed a bug where line ending conversion is not performed on CSS files</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h3>1.0.1.Final (28-Sep-2016)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fixed line ending issues with the generated site</li>
+<li>Change the default <code class="docutils literal"><span class="pre">sourceDirectory</span></code> from <code class="docutils literal"><span class="pre">src/sphinx</span></code> to <code class="docutils literal"><span class="pre">src/site/sphinx</span></code> to be consistent with
+<code class="docutils literal"><span class="pre">sphinx-maven-plugin</span></code></li>
+</ul>
+</div>
+<div class="section" id="final-27-sep-2016">
+<h3>1.0.0.Final (27-Sep-2016)<a class="headerlink" href="#final-27-sep-2016" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Initial release</li>
+</ul>
+</div>
+</div>
+<div class="section" id="read-more">
+<h2>Read more<a class="headerlink" href="#read-more" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic-usage.html">Using the Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html#using-plantuml">Using PlantUML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#id1">GraphViz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#plantuml-config">PlantUML Config</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html#sample-documentation-config">Sample Documentation Config</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="basic-usage.html" class="btn btn-neutral float-right" title="Using the Plugin" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Trustin Lee et al.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  <div class="github-fork-ribbon-wrapper right">
+  <div class="github-fork-ribbon">
+    <a href="https://github.com/trustin/sphinx-gradle-plugin">Fork me on GitHub</a>
+  </div>
+</div>
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.2.Final',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
